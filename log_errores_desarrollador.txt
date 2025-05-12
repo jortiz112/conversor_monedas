@@ -1,0 +1,95 @@
+[32m==== Error registrado en: 2025-05-11 01:49:18 ====
+
+java.lang.Exception: ❌ [31mMonto inválido. Debe ingresar un número válido (ej: 100 o 99.99).
+	at com.cursosalura.aplicacionconversordemonedas.utilidades.ValidadacionEntrada.leerMonto(ValidadacionEntrada.java:42)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuConversion.mostrarMenuConversion(MenuConversion.java:57)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:43)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+
+[32m==== Error registrado en: 2025-05-11 01:52:15 ====
+
+com.cursosalura.aplicacionconversordemonedas.excepcion.ExcepcionConversion: ❌ [31mCódigo de moneda no soportado. Verifique que ingresó correctamente las siglas de las monedas y el monto
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ValidadorRespuesta.validarAPIErrores(ValidadorRespuesta.java:26)
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ConversorMonedas.convertirMonto(ConversorMonedas.java:49)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuConversionDesdeListado.mostrarConversionDesdeListado(MenuConversionDesdeListado.java:61)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:46)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+
+[32m==== Error registrado en: 2025-05-11 15:30:20 ====
+
+java.io.FileNotFoundException: config.properties (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at com.cursosalura.aplicacionconversordemonedas.config.Configuracion.<clinit>(Configuracion.java:17)
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ConversorMonedas.<clinit>(ConversorMonedas.java:21)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuConversion.<init>(MenuConversion.java:20)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:43)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+
+[32m==== Error registrado en: 2025-05-11 18:40:41 ====
+
+java.lang.Exception: ⚠️ [34mOpción inválida. Intente nuevamente.
+
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:57)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+
+[32m==== Error registrado en: 2025-05-11 18:42:06 ====
+
+java.lang.Exception: ❌ [31mMonto inválido. Debe ingresar un número válido (ej: 100 o 99.99).
+	at com.cursosalura.aplicacionconversordemonedas.utilidades.ValidadacionEntrada.leerMonto(ValidadacionEntrada.java:42)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuConversion.mostrarMenuConversion(MenuConversion.java:57)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:43)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+
+[32m==== Error registrado en: 2025-05-11 18:44:40 ====
+
+com.cursosalura.aplicacionconversordemonedas.excepcion.ExcepcionConversion: ❌ [31mCódigo de moneda no soportado. Verifique que ingresó correctamente las siglas de las monedas y el monto
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ValidadorRespuesta.validarAPIErrores(ValidadorRespuesta.java:26)
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ConversorMonedas.convertirMonto(ConversorMonedas.java:49)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuConversionDesdeListado.mostrarConversionDesdeListado(MenuConversionDesdeListado.java:61)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:46)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+
+[32m==== Error registrado en: 2025-05-11 19:30:45 ====
+
+java.lang.Exception: ⚠️ [34mOpción inválida. Intente nuevamente.
+
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:57)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+
+[32m==== Error registrado en: 2025-05-11 19:35:28 ====
+
+com.cursosalura.aplicacionconversordemonedas.excepcion.ExcepcionConversion: ❌ [31mCódigo de moneda no soportado. Verifique que ingresó correctamente las siglas de las monedas y el monto
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ValidadorRespuesta.validarAPIErrores(ValidadorRespuesta.java:26)
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ConversorMonedas.convertirMonto(ConversorMonedas.java:50)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuConversionDesdeListado.mostrarConversionDesdeListado(MenuConversionDesdeListado.java:61)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:46)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+
+[32m==== Error registrado en: 2025-05-11 19:37:35 ====
+
+com.cursosalura.aplicacionconversordemonedas.excepcion.ExcepcionConversion: ❌ [31mLa clave de API es inválida. Contacte al administrador.
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ValidadorRespuesta.validarAPIErrores(ValidadorRespuesta.java:26)
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ConversorMonedas.convertirMonto(ConversorMonedas.java:50)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuConversion.mostrarMenuConversion(MenuConversion.java:63)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:43)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+
+[32m==== Error registrado en: 2025-05-12 00:49:13 ====
+
+com.cursosalura.aplicacionconversordemonedas.excepcion.ExcepcionConversion: ❌ [31mCódigo de moneda no soportado. Verifique que ingresó correctamente las siglas de las monedas y el monto
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ValidadorRespuesta.validarAPIErrores(ValidadorRespuesta.java:26)
+	at com.cursosalura.aplicacionconversordemonedas.servicios.ConversorMonedas.convertirMonto(ConversorMonedas.java:50)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuConversionDesdeListado.mostrarConversionDesdeListado(MenuConversionDesdeListado.java:61)
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:46)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+
+[32m==== Error registrado en: 2025-05-12 00:49:35 ====
+
+java.lang.Exception: ⚠️ [34mOpción inválida. Intente nuevamente.
+
+	at com.cursosalura.aplicacionconversordemonedas.menus.MenuPrincipal.mostrarMenuPrincipal(MenuPrincipal.java:57)
+	at com.cursosalura.aplicacionconversordemonedas.principal.Main.main(Main.java:16)
+

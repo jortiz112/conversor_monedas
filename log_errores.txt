@@ -1,0 +1,15 @@
+🔸 [37m[[32m2025-05-11 01:49:18[37m] - [31m❌ [31mMonto inválido. Debe ingresar un número válido (ej: 100 o 99.99).
+🔸 [37m[[32m2025-05-11 01:52:15[37m] - [31m❌ [31mError al realizar la conversión con ingreso manual de monedas y monto: ❌ [31mCódigo de moneda no soportado. Verifique que ingresó correctamente las siglas de las monedas y el monto
+🔸 [37m[[32m2025-05-11 15:30:19[37m] - [31m❌ [31mError al cargar el archivo de configuración: config.properties (The system cannot find the file specified)
+🔸 [37m[[32m2025-05-11 18:40:41[37m] - [31m⚠️ [34mOpción inválida. Intente nuevamente.
+
+🔸 [37m[[32m2025-05-11 18:42:06[37m] - [31m❌ [31mMonto inválido. Debe ingresar un número válido (ej: 100 o 99.99).
+🔸 [37m[[32m2025-05-11 18:44:40[37m] - [31m❌ [31mError al realizar la conversión con ingreso manual de monedas y monto: ❌ [31mCódigo de moneda no soportado. Verifique que ingresó correctamente las siglas de las monedas y el monto
+🔸 [37m[[32m2025-05-11 19:30:45[37m] - [31m⚠️ [34mOpción inválida. Intente nuevamente.
+
+🔸 [37m[[32m2025-05-11 19:35:28[37m] - [31m❌ [31mError al realizar la conversión con ingreso manual de monedas y monto: ❌ [31mCódigo de moneda no soportado. Verifique que ingresó correctamente las siglas de las monedas y el monto
+🔸 [37m[[32m2025-05-11 19:37:35[37m] - [31m❌ [31mError en la conversión: ❌ [31mLa clave de API es inválida. Contacte al administrador.
+🔸 [37m[[32m2025-05-11 19:37:35[37m] - [31m❌ Error: ❌ [31mError en la conversión: ❌ [31mLa clave de API es inválida. Contacte al administrador.
+🔸 [37m[[32m2025-05-12 00:49:13[37m] - [31m❌ [31mError al realizar la conversión con ingreso manual de monedas y monto: ❌ [31mCódigo de moneda no soportado. Verifique que ingresó correctamente las siglas de las monedas y el monto
+🔸 [37m[[32m2025-05-12 00:49:35[37m] - [31m⚠️ [34mOpción inválida. Intente nuevamente.
+
