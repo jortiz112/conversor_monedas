@@ -45,8 +45,8 @@ mantenimiento y expansión futura.
 1. Configuración de la clave API (api.key): Para que el conversor funcione correctamente, es necesario 
    contar con una clave de acceso (API Key) del servicio externo [ExchangeRate-API], la puedes
    conseguir en esta dirección: https://www.exchangerate-api.com/
-      - Esta clave debe colocarse dentro del archivo config.properties, ubicado en la raíz de la carpeta 
-        src del proyecto.
+      - Esta clave debe colocarse dentro del archivo config.properties, ubicado en la raíz de la
+        carpeta src del proyecto.
       - Formato del archivo: api.key=TU_CLAVE_AQUI
       - La clase Configuracion se encarga de leer esta clave automáticamente desde el archivo, y lanza 
         errores si está vacía o no se encuentra.
@@ -57,12 +57,13 @@ mantenimiento y expansión futura.
       - Ingresar el monto a convertir (por ejemplo, 100.0).
 
 3. Validación de entrada: Antes de realizar la conversión, el sistema valida
-      - Que los códigos de moneda existan, que sean letras, pueden ser en mayúsculas o minusculas, no números.
+      - Que los códigos de moneda existan, que sean letras, pueden ser en mayúsculas o minusculas, no
+        números.
       - Que el monto ingresado sea un número positivo.
       - Que los campos no estén vacíos. Esto lo realiza la clase ValidacionEntrada
 
-4. Consulta de tasas de conversión en tiempo real: El conversor se conecta en tiempo real al API de tipo 
-   de cambio utilizando la clave API para:
+4. Consulta de tasas de conversión en tiempo real: El conversor se conecta en tiempo real al API de
+   tipo de cambio utilizando la clave API para:
    - Obtener la tasa actual de conversión.
    - Calcular el resultado del monto convertido.
    - Recibir respuestas estructuradas como RespuestaConversionMonto.
@@ -72,44 +73,46 @@ mantenimiento y expansión futura.
       - La moneda de destino y la tasa de conversión.
       - El resultado final del monto convertido.
 
-6. Registro de historial de conversiones: Cada conversión exitosa se guarda automáticamente en un archivo 
-   llamado historial_conversiones.txt para consulta futura.
+6. Registro de historial de conversiones: Cada conversión exitosa se guarda automáticamente en un
+   archivo llamado historial_conversiones.txt para consulta futura.
 
-7. Manejo de errores de API y del sistema: Si ocurre un error (como clave inválida, código de moneda 
-   incorrecto, API caída, etc.)
+7. Manejo de errores de API y del sistema: Si ocurre un error (como clave inválida, código de
+   moneda incorrecto, API caída, etc.)
    - Se registra un mensaje amigable en log_errores.txt.
    - Se guarda un registro técnico con traza detallada en log_errores_desarrollador.txt.
 
-8. Conversión desde listado de monedas (opcional): En lugar de escribir los códigos manualmente, el usuario 
-   puede
+8. Conversión desde listado de monedas (opcional): En lugar de escribir los códigos manualmente,
+   el usuario puede
    - Ver un listado de monedas disponibles.
    - Seleccionar desde ese listado para evitar errores de escritura.
 
 ```
 ## 📑Características
 
-- 🔄 Conversión de monedas: Convierte un monto entre dos monedas utilizando tasas de cambio obtenidas 
-      de una API (ExchangeRate API).
+- 🔄 Conversión de monedas: Convierte un monto entre dos monedas utilizando tasas de cambio
+      obtenidas de una API (ExchangeRate API).
 
-- 📋 Listado completo de monedas: Muestra al usuario una lista de monedas disponibles en español e ingles
-      con sus respectivos códigos y tasas.
+- 📋 Listado completo de monedas: Muestra al usuario una lista de monedas disponibles en español e
+     ingles con sus respectivos códigos y tasas.
 
-- 🧾 Historial de conversiones: Registra cada operación realizada en un archivo historial_conversiones.txt 
-      para futuras consultas.
+- 🧾 Historial de conversiones: Registra cada operación realizada en un archivo
+     historial_conversiones.txt para futuras consultas.
 
-- ⚠️ Manejo y registro de errores: Implementa una estructura robusta para capturar errores funcionales
-      (como los errores que maneja la API) y técnicos (excepciones), almacenándolos en 
-      archivos separados.
+- ⚠️ Manejo y registro de errores: Implementa una estructura robusta para capturar errores
+     funcionales (como los errores que maneja la API) y técnicos (excepciones), almacenándolos en 
+     archivos separados.
 
-- 👨‍💻 Log para desarrolladores: Incluye un log detallado con trazas de errores para facilitar la depuración.
+- 👨‍💻 Log para desarrolladores: Incluye un log detallado con trazas de errores para facilitar la
+     depuración.
 
 - 📂 Configuración externa: Usa un archivo config.properties para almacenar la clave de acceso a la API, 
       facilitando cambios sin recompilar.
 
-- 🔐 Validación de entradas: Verifica que los datos ingresados por el usuario sean válidos antes de procesarlos.
+- 🔐 Validación de entradas: Verifica que los datos ingresados por el usuario sean válidos antes de
+     procesarlos.
 
-- 📚 Interfaz de usuario por consola: Menú interactivo con navegación clara para realizar operaciones de forma 
-      sencilla.
+- 📚 Interfaz de usuario por consola: Menú interactivo con navegación clara para realizar operaciones de
+     forma sencilla.
 
 ## 🧱Tecnologías Utilizadas
 
@@ -131,7 +134,8 @@ mantenimiento y expansión futura.
 
 - Separación de lógica en capas:
 
-   - config: Este paquete maneja la configuración externa de la aplicación. Contiene la clase Configuracion, que:
+   - config: Este paquete maneja la configuración externa de la aplicación. Contiene la clase Configuracion,
+     que:
 
       - Carga automáticamente el archivo config.properties desde el classpath.
 
@@ -143,18 +147,22 @@ mantenimiento y expansión futura.
 
    - presentacion: presentación principal del conversor de monedas
 
-   - principal: contiene la clase Main, punto de entrada de la aplicación, que orquesta los menús y operaciones.
+   - principal: contiene la clase Main, punto de entrada de la aplicación, que orquesta los menús y
+     operaciones.
 
-   - menus: gestiona la interacción con el usuario a través de un menú de consola dividido por funcionalidades.
+   - menus: gestiona la interacción con el usuario a través de un menú de consola dividido por
+     funcionalidades.
 
-   - servicios: contiene la lógica, incluyendo el consumo de la API de tipos de cambio, y la realización de conversiones.
+   - servicios: contiene la lógica, incluyendo el consumo de la API de tipos de cambio, y la
+     realización de conversiones.
 
-   - modelos: agrupa las estructuras de datos que representan las respuestas de la API (records) y las solicitudes de conversión.
+   - modelos: agrupa las estructuras de datos que representan las respuestas de la API (records) y las
+     solicitudes de conversión.
 
    - excepcion: manejo de errores
 
-   - historial: define clases para manejar y registrar errores funcionales y técnicos, diferenciando entre mensajes para el usuario y  
-                detalles para desarrolladores y el historico de conversiones.
+   - historial: define clases para manejar y registrar errores funcionales y técnicos, diferenciando
+     entre mensajes para el usuario y  detalles para desarrolladores y el historico de conversiones.
 
    - utilidades: valida datos ingresados por el usuario.
 
@@ -162,7 +170,8 @@ mantenimiento y expansión futura.
 
 ## 🙏Contribuciones
 
->> Si deseas contribuir al proyecto, siéntete libre de hacer un fork del repositorio y enviar un pull request con tus mejoras o sugerencias.
+>> Si deseas contribuir al proyecto, siéntete libre de hacer un fork del repositorio y enviar un pull
+   request con tus mejoras o sugerencias.
 
 ## 🔆Resultados del Conversor de Monedas
 
