@@ -43,8 +43,8 @@ mantenimiento y expansión futura.
 ```sh
 
 1. Configuración de la clave API (api.key): Para que el conversor funcione correctamente, es necesario 
-   contar con una clave de acceso (API Key) del servicio externo [ExchangeRate-API], la puedes conseguir
-   en esta dirección: https://www.exchangerate-api.com/
+   contar con una clave de acceso (API Key) del servicio externo [ExchangeRate-API], la puedes
+   conseguir en esta dirección: https://www.exchangerate-api.com/
       - Esta clave debe colocarse dentro del archivo config.properties, ubicado en la raíz de la carpeta 
         src del proyecto.
       - Formato del archivo: api.key=TU_CLAVE_AQUI
