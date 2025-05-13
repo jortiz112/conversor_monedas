@@ -250,8 +250,8 @@ mantenimiento y expansión futura.
 
 ## 🏆Insignias ganadas
 
->> ![img](images/)    Segunda insignia ganada
+>> ![img](images/Badge_Conversor.png)    Segunda insignia ganada
 
 ## 📜Certificado
 
-![img](images/)
+![img](images/Certificado.png)
