@@ -127,7 +127,7 @@ mantenimiento y expansión futura.
 ✔️📁 Archivos planos (para almacenamiento de historial y logs)
 
 ✔️✅ Estructura de carpetas orientada a paquetes lógicos: modelos, servicios, menús, utilidades, errores
-      config, presentación, principal e historial.
+        config, presentación, principal e historial.
 
 ## 🧭Arquitectura y diseño
 
